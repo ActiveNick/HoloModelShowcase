@@ -5,7 +5,7 @@ using HoloToolkit.Unity;
 using HoloToolkit.Unity.InputModule;
 using System;
 
-public class ModelPlacement : MonoBehaviour, IInputClickHandler
+public class ModelPlacement : MonoBehaviour, IInputClickHandler, IFocusable
 {
     public GameObject ShowcaseModel;
     private AudioSource ModelSound;
@@ -60,5 +60,15 @@ public class ModelPlacement : MonoBehaviour, IInputClickHandler
 
         MyTTS.SpeakText("Ok. Placing mode is now enabled. Look at the floor and pick a spot to place the model. Air Tap when ready.");
 
+    }
+
+    public void OnFocusEnter()
+    {
+        //throw new NotImplementedException();
+    }
+
+    public void OnFocusExit()
+    {
+        //throw new NotImplementedException();
     }
 }

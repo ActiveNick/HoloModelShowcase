@@ -132,13 +132,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\HoloToolkit\Build\Editor\BuildDeployPortal.cs" />
-    <Compile Include="Assets\HoloToolkit\Build\Editor\BuildDeployPrefs.cs" />
-    <Compile Include="Assets\HoloToolkit\Build\Editor\BuildDeployTools.cs" />
-    <Compile Include="Assets\HoloToolkit\Build\Editor\BuildDeployWindow.cs" />
-    <Compile Include="Assets\HoloToolkit\Build\Editor\BuildSLNUtilities.cs" />
-    <Compile Include="Assets\HoloToolkit\Build\Editor\HoloToolkitCommands.cs" />
-    <Compile Include="Assets\HoloToolkit\Build\Editor\XdeGuestLocator.cs" />
     <Compile Include="Assets\HoloToolkit\Input\Scripts\Editor\EditorHandsMaterialInspector.cs" />
     <Compile Include="Assets\HoloToolkit\Input\Scripts\Voice\Editor\KeywordAndKeyCodeDrawer.cs" />
     <Compile Include="Assets\HoloToolkit\Input\Scripts\Voice\Editor\SpeechInputHandlerEditor.cs" />
