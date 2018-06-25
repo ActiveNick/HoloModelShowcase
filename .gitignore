@@ -23,6 +23,10 @@ bld/
 [Bb]in/
 [Oo]bj/
 
+# Don't include MRTK examples
+Assets/HoloToolkit-Examples/**
+Assets/HoloToolkit-Examples.meta
+
 # Packaging libraries
 [Pp]ackaging/Builds/*
 [Pp]ackaging/Packages/*
