@@ -3,8 +3,8 @@ This is a Mixed Reality demo project for HoloLens used to showcase a new product
 
 This is a work in a progress that I am sharing publicly as I add features. 
 
-* **Unity version: 5.6.1f1 Release**
-* **HoloToolkit version: 1.5.7**
+* **Unity version: 2017.4.6f1 LTS**
+* **MRTK version: 2017.4.0.0**
 
 ## Features 
 

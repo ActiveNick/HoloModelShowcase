@@ -13,7 +13,7 @@ public class ModelPlacement : MonoBehaviour, IInputClickHandler, IFocusable
     public HoloToolkit.Unity.InputModule.Cursor ActiveCursor;
     public Canvas UICanvas;
 
-    private TextToSpeechManager MyTTS;
+    private TextToSpeech MyTTS;
 
     private bool IsPlacing = true;
     private bool IsStartup = true; // See hack comment below
@@ -26,7 +26,7 @@ public class ModelPlacement : MonoBehaviour, IInputClickHandler, IFocusable
 
         ModelSound = ShowcaseModel.GetComponent<AudioSource>();
 
-        MyTTS = GetComponent<TextToSpeechManager>();
+        MyTTS = GetComponent<TextToSpeech>();
     }
 
     private void Update()
@@ -36,7 +36,7 @@ public class ModelPlacement : MonoBehaviour, IInputClickHandler, IFocusable
         if (IsStartup)
         {
             IsStartup = false;
-            MyTTS.SpeakText("Welcome to the holographic model showcase. Look at the floor and pick a spot to place the model. Air Tap when ready.");
+            MyTTS.StartSpeaking("Welcome to the holographic model showcase. Look at the floor and pick a spot to place the model. Air Tap when ready.");
         }
     }
 
@@ -58,7 +58,7 @@ public class ModelPlacement : MonoBehaviour, IInputClickHandler, IFocusable
         UICanvas.gameObject.SetActive(true);
         IsPlacing = true;
 
-        MyTTS.SpeakText("Ok. Placing mode is now enabled. Look at the floor and pick a spot to place the model. Air Tap when ready.");
+        MyTTS.StartSpeaking("Ok. Placing mode is now enabled. Look at the floor and pick a spot to place the model. Air Tap when ready.");
 
     }
 

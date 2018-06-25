@@ -7,11 +7,11 @@ using System;
 
 public class ShowcaseController : MonoBehaviour, IInputClickHandler {
 
-    private TextToSpeechManager MyTTS;
+    private TextToSpeech MyTTS;
 
     // Use this for initialization
     void Start () {
-        MyTTS = GetComponent<TextToSpeechManager>();
+        MyTTS = GetComponent<TextToSpeech>();
     }
 
     // Update is called once per frame
@@ -21,7 +21,7 @@ public class ShowcaseController : MonoBehaviour, IInputClickHandler {
 
     public void DescribeModel()
     {
-        MyTTS.SpeakText("This is just a simple road bike. There's nothing special about it and it's all that we cound find for free in the Unity Asset Store.");
+        MyTTS.StartSpeaking("This is just a simple road bike. There's nothing special about it and it's all that we cound find for free in the Unity Asset Store.");
     }
 
     public void OnInputClicked(InputClickedEventData eventData)
